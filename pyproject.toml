@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+
+[project]
+name = "qcog-ML-Final-Round"
+version = "2024.0.0"
+dependencies = [
+    "pandas",
+    "torch",
+    "pytest",
+    "kagglehub",
+    "scikit-learn",
+    "pytest"
+]
+requires-python = ">=3.9"
+readme = "README.md"
