@@ -1,4 +1,4 @@
-# Ml_debug
+# ML_Debug
 Please commit all your code to this repository. You can make a branch or directly commit to main. Please be mindful of your commit messages so the team can have an easier time reviewing!
 
 Use the pyproject.toml file to install required dependencies into your virtual environment.
