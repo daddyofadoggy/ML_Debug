@@ -138,31 +138,5 @@ class ActFunc(torch.autograd.Function):
 
         return grad_input
     
-
-
-    '''
-
-     f(x) = x * (e^x) / ( 1 + e^x) = x/(1+e^-x)
-      df/dx = x d/dx (1/1+e^-x) +  1/(1+e^-x)  = x* e^x/(e^x+1)^2 +  1/(1+e^-x)
-    
-    d/dx(1/(1+e^-x)) = e^-x (1)/(1+e^-x)^2 = 
-
-    f(x)/dx = xe^x/(e^x+1)^2 + 1/(1+e^-x)
-
-
-    f(x) = x * (e^x) / ( 1 + e^x)  = x * sigmoid(x) 
-                                   
-    df/dx = x * d/dx(sig(x)) + sig(x)
-
-    d/dx(sig) = sig(1-sig) = 
-
-    df/dx = x*sig(1-sig) + sig
-
-    dl/dx = df/dx * 
-
-    dL/dx = dL/df * df/dx
-
     
 
-    '''
-    
