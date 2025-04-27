@@ -20,7 +20,7 @@ from mlfin.functions_2 import square
 @pytest.mark.parametrize("parameter,", [3])
 def test_square_forward(parameter):
     x = float(parameter)
-    relu = square.apply
+    relu = square
 
     output = relu(x)
     trusted_output = 9.0
