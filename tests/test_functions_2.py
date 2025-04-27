@@ -17,7 +17,7 @@ sys.path.append(project_dir)
 
 from mlfin.functions_2 import square
 
-@pytest.mark.parametrize("par,", [3])
+@pytest.mark.parametrize("parameter,", [3])
 def test_square_forward(parameter):
     x = float(parameter)
     relu = square.apply
